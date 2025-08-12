@@ -78,14 +78,29 @@ function selectNumber(e) {
 
     if (error.innerText != "") error.innerText = "";
 
-    if (firstTerm === null || operator === null) {
-        firstTerm = Number(e.target.innerText);
-        firstTermText.innerText = firstTerm;
-    }
+    if (operator === null) {
 
+        if (firstTerm === null) {
+            firstTerm = Number(e.target.innerText);
+        }
+
+        else {
+            firstTerm = firstTerm * 10 + Number(e.target.innerText);
+        }
+
+        firstTermText.innerText = firstTerm;
+
+    }
     else {
-        secondTerm = Number(e.target.innerText);
+        if (secondTerm === null) {
+            secondTerm = Number(e.target.innerText);
+        }
+
+        else {
+            secondTerm = secondTerm * 10 + Number(e.target.innerText);
+        }
         secondTermText.innerText = secondTerm;
+
     }
 }
 
