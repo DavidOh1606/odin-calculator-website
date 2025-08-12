@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.output {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 220px;
+    height: 40px;
+}
+
+.container-numbers {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    width: 250px;
+    height: 200px; 
+}
+
+.number {
+    padding: 4px 32px;
+
+}
+
+.operator {
+    padding: 4px 16px;
+}
+
+.container-buttons {
+    display: flex;
+
+}
+
+.container-operators {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+}
+
+.output {
+    text-align: right;
+    padding: 8px;
+}
